@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+// Build an app that helps to increment
 function App() {
+	// define state
+	// define function to add and subtract
+	// create button to add and minus(add an onclick funtion to increment and decrement)
+
+	const [number, setNumber] = useState(0)
+
+	const increment = () => {
+		setNumber(number + 1)
+	}
+
+	const decrement = () => {
+		setNumber(number - 1)
+	}
+
 	return (
-		<div className='flex items-center justify-center w-screen h-screen bg-gray-900 '>
-			<div className='w-3/12 p-6 mx-auto space-y-10 text-center bg-gray-800 rounded'>
-				<h1 className='text-4xl text-white'>Vite + React + Tailwind</h1>
-				<p className='text-2xl text-blue-300'>It's working</p>
-				<a
-					href='https://github.com/moinulmoin/vite-react-tailwind-starter'
-					className='block text-3xl text-blue-300 underline'
-				>
-					⭐Star the repo if it helped you! :)
-				</a>
-			</div>
+		<div className='text-center justify-center align-center text-2xl'>
+			<h1>Increment and Decrement</h1>
+			<button className='mr-4 border-2 p-4' onClick={increment}> + </button>
+			{number}
+			<button className='ml-4 border-2 p-4' onClick={decrement}> - </button>
 		</div>
 	);
 }
