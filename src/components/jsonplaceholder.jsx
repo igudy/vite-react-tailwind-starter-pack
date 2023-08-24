@@ -229,10 +229,6 @@
 
 // export default App;
 
-
-
-
-
 // JSONAPICALLS WITH FETCH OPERATIONS
 import React, { useState, useEffect } from 'react';
 

@@ -3,14 +3,13 @@ import Jsonplaceholder from './components/jsonplaceholder';
 import Axios from './components/axios-sample-code';
 
 function App() {
-	
 
-	
 	return (
-		<div className='text-center justify-center align-center text-2xl'>
-			<Jsonplaceholder/>
-			{/* <Axios /> */}
-		
+		<div className='font-serif bg-gray-900 text-white'>
+			{/* <Jsonplaceholder/> */}
+			<div className='mx-5'>
+				<Axios />
+			</div>
 		</div>
 	);
 }
