@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Jsonplaceholder from './components/jsonplaceholder';
+import Interviewquestion from './components/interviewquestion';
 import Axios from './components/axios-sample-code';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 		<div className='font-serif bg-gray-900 text-white'>
 			{/* <Jsonplaceholder/> */}
 			<div className='mx-5'>
-				<Axios />
+				{/* <Axios /> */}
+				<Interviewquestion />
 			</div>
 		</div>
 	);
